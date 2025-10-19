@@ -1,0 +1,115 @@
+body {
+  /* background-image: url("https://28kartin.ru/wp-content/uploads/2022/12/475.8-%D0%B1%D0%B5%D0%B6%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BE%D1%82%D1%82%D0%B5%D0%BD%D0%BA%D0%B8-%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F.jpg"); /* Путь до файла картинки */
+  background-position: center center;     /* задает стартовое положение изображения на странице */
+  background-size: cover;                 /* определяет размер изображения на странице */
+  background-repeat: no-repeat;           /* свойство устанавливает, будет ли повторяться изображение и каким образом */
+  background-attachment: fixed;           /* cвойство определяет, будет ли фоновое изображение прокручиваться вместе с остальной частью страницы или будет фиксированным */
+  align-items: center
+}
+
+.my-btn { 
+  margin-right: 5px;           /* задаем отступ от кнопки справа */
+  margin-top: 5px;             /* задаем отступ от кнопки сверху*/
+  width: 50px;                 /* задаем ширину кнопки */
+  height: 50px;                /* задаем высоту кнопки */
+  border-radius: 0%;          /* округляем кнопку */
+  border: none;                /* отключаем обводку */
+  background: #d8bfd8;         /* задаем серый цвет кнопки */
+  color: white;                /* задаем белый цвет текста внутри кнопки */
+  font-size: 1.0rem;           /* увеличим размер шрифта */
+  font-family: Andale Mono, monospace; /* сменим шрифт */
+  text-align: center
+  cursor: pointer;             /* при наведении на кнопку курсор будет изменен
+                                  со стрелки на 'указательный палец' */
+  user-select: none;           /* отключаем возможность выделить текст внутри кнопки */
+  border-radius: 10px;
+} 
+
+/* hover - это состояние элемента, когда на него наведен курсор */
+.my-btn:hover {
+  background: #9400d3 ; /* при наведение курсора на кнопку, она будет окрашена в серый */
+}
+
+/* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
+.my-btn:active {
+  filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+}
+
+/* селектор для кнопок первостепенных операций */
+.my-btn.primary { 
+  background: #483d8b; /* цвет кнопки оранжевый */
+  border-radius: 10px;
+}
+
+/* селектор для кнопок второстепенных операций */
+.my-btn.secondary { 
+  background: #778899; /* цвет кнопки сервый */
+}
+.my-btn.del { 
+  background: #DC143C; /* цвет кнопки сервый */
+  border-radius: 10px;
+}
+
+/* селектор для кнопки расчета выражения (=) */
+.my-btn.execute { 
+  width: 110px;          /* сделаем кнопку шире других */
+  border-radius: 10px;   /* подкорректируем округлость */
+}
+
+/* селектор для поля вывода результата */
+.result { 
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  /* border-radius: 10%; */
+  margin-bottom: 15px;         /* отступ снизу */
+  padding-right: 10px;         /* выступ справа */
+  background: #d8bfd8; /* цвет можно задавать и таким образом */
+  text-align: right;       /* примагнитим текст к правой стороне */
+  color: #000000;              /* цвет текста белый */
+  font-size: 1.0rem;
+  font-family: Andale Mono, monospace;
+}
+.topic {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  background: #b0c4de;
+  text-align: center;
+  font-size: 1.0rem;
+  border: none;
+}
+.topic:hover {
+    background: #9400d3 ;
+
+}
+.topic:active {
+  filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+}
+
+.treeHTML{
+    line-height: normal;
+    margin-top: 25px;
+}
+.treeHTML details{
+    display: block;
+}
+
+.treeHTML div {
+  position: relative;
+  margin: 0 0 0 .5em;
+  padding: 0 0 0 1.2em;
+}
+
+.treeHTML summary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.treeHTML div{
+    font-size: 20px;
+}
